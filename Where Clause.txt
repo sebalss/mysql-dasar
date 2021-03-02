@@ -1,0 +1,17 @@
+show databases;
+
+use belajar_mysql;
+
+Show TABLES;
+
+describe products;
+
+select name, price, id from products;
+
+select * from products;
+
+select  * from products where quantity = 100;
+
+select  * from products where price = 15000;
+
+select  * from products where name = 'mie ayam original';

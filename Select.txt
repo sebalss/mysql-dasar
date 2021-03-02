@@ -1,0 +1,5 @@
+select * from products;
+
+select name, price, id from products;
+
+select * from products where id = 'P0003';

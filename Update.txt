@@ -1,0 +1,13 @@
+ALTER TABLE products ADD COLUMN category ENUM ('Makanan', 'Minuman', 'Lain-lain') AFTER name;
+
+UPDATE products
+SET category = 'Lain-lain',
+    description = 'Rokok bermerek Magnum Filter'
+WHERE id = 'P0021' ;
+
+insert into products(id, name, price, quantity) values
+('P00022', 'Magnum Filter', 30000, 67);
+
+UPDATE products
+SET price = price + 5000
+WHERE id = 'P0005' ;

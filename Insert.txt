@@ -1,0 +1,40 @@
+show databases;
+
+use belajar_mysql;
+
+create table products(
+    id          VARCHAR(100) not null,
+    name        VARCHAR(100) not null,
+    description TEXT,
+    price       INT unsigned not null,
+    quantity    INT unsigned not null default 0,
+    created_at  TIMESTAMP not null default current_timestamp
+)ENGINE = InnoDB;
+
+Show TABLES;
+
+describe products;
+
+insert into products(id, name, price, quantity)
+values ('P0001', 'Mie Ayam Original', 15000, 100);
+
+insert into products(id, name, price, quantity) values
+('P0002', 'Mie Ayam Baso Tahu', 20000, 100);
+('P0003', 'Mie Ayam Ceker', 20000, 100),
+('P0004', 'Mie Ayam Spesial', 25000, 100),
+('P0005', 'Mie Ayam Yamin', 15000, 100);
+('P0006', 'Bakso Malang', 23000, 100),
+('P0007', 'Bakso Telor', 23000, 100),
+('P0008', 'Bakso Ikan', 20000, 100),
+('P0009', 'Bakso Daging Cincang', 25000, 100),
+('P00010', 'Baso Tahu Goreng', 10000, 100),
+('P00011', 'Baso Tahu Kuah', 10000, 100),
+('P00012', 'Dimsum', 20000, 100),
+('P00013', 'Cilok', 5000, 100),
+('P00014', 'Gorengan', 5000, 100),
+('P00015', 'Ayam Goreng', 20000, 100),
+('P00016', 'Ayam Bakar', 23000, 100),
+('P00017', 'Sayur Sop', 15000, 100),
+('P00018', 'Ramen Kuah Asin', 20000, 100),
+('P00019', 'Ramen Kuah Manis', 25000, 100),
+('P00020', 'Tempura', 20000, 100);
